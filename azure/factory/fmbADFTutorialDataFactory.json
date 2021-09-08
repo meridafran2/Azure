@@ -1,0 +1,9 @@
+{
+	"name": "fmbADFTutorialDataFactory",
+	"location": "westus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "36125a1a-8268-468e-bae7-0a62408da27f",
+		"tenantId": "a10e483f-b4a2-4f12-9ae2-254a11c834b3"
+	}
+}
