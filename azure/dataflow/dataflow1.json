@@ -1,0 +1,20 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "MoviesBlob",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"script": "source(output(\n\t\tadult as string,\n\t\tbelongs_to_collection as string,\n\t\tbudget as string,\n\t\tgenres as string,\n\t\thomepage as string,\n\t\tid as string,\n\t\timdb_id as string,\n\t\toriginal_language as string,\n\t\toriginal_title as string,\n\t\toverview as string,\n\t\tpopularity as string,\n\t\tposter_path as string,\n\t\tproduction_companies as string,\n\t\tproduction_countries as string,\n\t\trelease_date as string,\n\t\trevenue as string,\n\t\truntime as string,\n\t\tspoken_languages as string,\n\t\tstatus as string,\n\t\ttagline as string,\n\t\ttitle as string,\n\t\tvideo as string,\n\t\tvote_average as string,\n\t\tvote_count as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> source1"
+		}
+	}
+}
